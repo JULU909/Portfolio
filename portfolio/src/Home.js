@@ -7,6 +7,16 @@ function Home() {
         <h1>Welcome to the Futuristic Home Page</h1>
         <p>Explore the future with us!</p>
         <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+        <h1>Welcome to the Futuristic Home Page</h1>
+
+
 
      </div>
     );

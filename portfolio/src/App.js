@@ -1,26 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
-import { Route, Router , Routes} from 'react-router-dom';
 import Home from './Home';
 import Aboutme from './Aboutme';
-import { BrowserRouter } from 'react-router-dom';
+
 function App() {
-  let component
-  switch (window.location.pathname){
-    case "/home":
-      component = <Home/>
-    case "/about":
-        component = <Aboutme/>
-    case "/projects":
-          component = <Home/>
-  }
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
-   <div className='App'>
-    {component}
-
-
-   </div>
+    <div className="App">
+      <Navbar currentPage={currentPage} onPageChange={handlePageChange} />
+      {/* Rest of your app content */}
+      {currentPage === 'home' && <Home />}
+      {currentPage === 'about' && <Aboutme/>}
+    </div>
   );
 }
 
