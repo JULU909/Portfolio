@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Home from './Home';
 import Aboutme from './Aboutme';
-
+import Project from './projects';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <Navbar currentPage={currentPage} onPageChange={handlePageChange} />
-      {/* Rest of your app content */}
       {currentPage === 'home' && <Home />}
       {currentPage === 'about' && <Aboutme/>}
+      {currentPage === 'projects' && <Project/>}
     </div>
   );
 }
