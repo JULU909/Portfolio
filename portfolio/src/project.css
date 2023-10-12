@@ -30,3 +30,17 @@
   font-size: 20px;
 }
 
+.project-heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: white; /* Add this line to set the color to white */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-heading.scrolled {
+  opacity: 1;
+}
+.project-page {
+  margin-top: 500px; /* Adjust the value as needed for the desired spacing */
+}

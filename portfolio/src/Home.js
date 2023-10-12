@@ -8,11 +8,13 @@ function Home() {
         <img src={process.env.PUBLIC_URL + '/headGreen.png'} alt="Your Image" />
       </div>
       <div className="description-container">
-        <h2>Hi, I am Harish Vasanth.</h2>
-        <p>
-            Machine Learning Engineer
-        </p>
+      <div class="floating-text">
+  <h1>Hi, I am Harish Vasanth.</h1>
+  <p>Machine Learning Engineer</p>
+</div>
       </div>
+
+
     </div>
   )}
   ;

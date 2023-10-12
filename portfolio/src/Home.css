@@ -45,11 +45,41 @@
   font-size: 16px;
   color: #FFF;
   font-family: monospace;
-  font-size: 14px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 body{
   background-color: #1A4F6D
+}
+
+.floating-text {
+  position: relative;
+  animation: floatAnimation 5s infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.floating-text h1, .floating-text h2 {
+  color: white; /* Add this line to set the color to white */
+  font-size: 58px;
+  color: #FFF;
+  font-family: monospace;
+}
+
+.floating-text p{
+  color: white; /* Add this line to set the color to white */
+  font-size: 32px;
+  color: #FFF;
+  font-family: monospace;
 }

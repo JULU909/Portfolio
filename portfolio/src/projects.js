@@ -1,19 +1,38 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './project.css';
+import ProjectCard from './projectCard';
+import React, { useEffect, useState } from 'react';
 
 const Project = ({ title, image, link }) => {
-  return (
-    <div>
-    <div>
-        <h3 className="main-title">{"Success is never the result of a single grand gesture"}</h3>
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+  
+  return (
+
+    <div className="project-page">
+      <h1 className={`project-heading ${isScrolled ? 'scrolled' : ''}`}>Project Work</h1>
+      {/* Your project cards or content go here */}
+      <ProjectCard
+          imageSrc={process.env.PUBLIC_URL + '/candychessVapourwave.png'}
+          title="Candy Chess AI"
+        />
     </div>
-    <Link to={link} className="project-box">
-      <img src={process.env.PUBLIC_URL + '/candychessVapourwave.png'} alt={title} className="project-image" />
-      <h3 className="project-title">{"Candy Chess AI"}</h3>
-    </Link>
-    </div>
+
+    
   );
 };
 

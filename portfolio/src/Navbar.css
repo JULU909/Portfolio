@@ -2,10 +2,10 @@
 
 nav {
 
-    padding: 20px 1450px;
+    padding: 20px ;
     position: fixed;
     top: 0;
-    left: 100;
+    right: 0;
     width: 100%;
     z-index: 9999;
   }
@@ -19,7 +19,7 @@ nav ul {
   }
 
 nav li {
-    float: left;
+    float: right;
   }
   
 

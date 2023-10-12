@@ -6,13 +6,14 @@ function Navbar({ currentPage, onPageChange }) {
     <nav className="navbar">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a
+        <a
             href="#"
-            className={`nav-link ${currentPage === 'home' ? 'active' : ''}`}
-            onClick={() => onPageChange('home')}
+            className={`nav-link ${currentPage === 'contact' ? 'active' : ''}`}
+            onClick={() => onPageChange('contact')}
           >
-            Home
+            Contact me
           </a>
+          
         </li>
         <li className="nav-item">
           <a
@@ -33,13 +34,14 @@ function Navbar({ currentPage, onPageChange }) {
           </a>
         </li>
         <li className="nav-item">
-          <a
+        <a
             href="#"
-            className={`nav-link ${currentPage === 'contact' ? 'active' : ''}`}
-            onClick={() => onPageChange('contact')}
+            className={`nav-link ${currentPage === 'home' ? 'active' : ''}`}
+            onClick={() => onPageChange('home')}
           >
-            Contact me
+            Home
           </a>
+          
         </li>
         {/* Add more navbar items as needed */}
       </ul>
