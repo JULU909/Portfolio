@@ -1,0 +1,47 @@
+
+  .sound-analysis-description h2 {
+    color: white; /* Add this line to set the color to white */
+    align-self: top;
+    font-family:monospace;
+    font-size: 50px;
+
+
+  }
+
+  .sound-analysis {
+    display: flex;
+    align-items: flex-start;
+    margin: 50px 0;
+  }
+  
+  .sound-analysis-image img {
+    max-width: 850px; /* Change to 100% for flexible sizing */
+    height: auto;
+  }
+  
+  .sound-analysis-description {
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+
+  .sound-analysis-description p {
+    flex-grow: 1;
+    color: white; /* Add this line to set the color to white */
+    font-family:monospace;
+    font-size: 20px;
+
+
+  }
+  
+  .vibrate {
+    animation: vibrateAnimation 0.02s infinite alternate; /* Reduced duration for higher frequency */
+  }
+  
+  @keyframes vibrateAnimation {
+    from {
+      transform: translateX(-2px);
+    }
+    to {
+      transform: translateX(2px);
+    }
+  }

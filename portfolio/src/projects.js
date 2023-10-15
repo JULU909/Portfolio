@@ -30,6 +30,10 @@ const Project = ({ title, image, link }) => {
           imageSrc={process.env.PUBLIC_URL + '/candychessVapourwave.png'}
           title="Candy Chess AI"
         />
+      <ProjectCard
+          imageSrc={process.env.PUBLIC_URL + '/a-robot-attempting-to-learn-a-new-language-v0-crypnkt3qat81.webp'}
+          title="Natural Language Processing"
+        />
     </div>
 
     

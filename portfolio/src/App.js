@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Aboutme from './Aboutme';
 import Project from './projects';
-
+import Sound from './Sound';
 import { useSpring, animated } from 'react-spring';
 import { Scrollama, Step } from 'react-scrollama';
 
@@ -14,7 +14,7 @@ function App() {
     { id: 'home', text: 'Home' }, // Include the Home page in the steps array
 
     { id: 'project', text: 'Project' },
-    { id: 'page2', text: 'Page 2' },
+    { id: 'Sound', text: 'Sound' },
     { id: 'page3', text: 'Page 3' },
   ];
 
@@ -38,7 +38,9 @@ function App() {
                   <Home />
                 ) : step.id === 'project' ? (
                   <Project/> // Render the Projects component for the Projects page
-                ) : (
+                ) : step.id === 'Sound' ? (
+                  <Sound/>
+                ) :(
                   <animated.h2 style={springProps}>{step.text}</animated.h2>
                 )}
                 

@@ -4,6 +4,9 @@
     width: 200px; /* Set the width of the card */
     height: 200px; /* Set the height of the card */
     overflow: hidden; /* Hide any overflow */
+    padding-left: 10px;
+    padding-bottom: 50px;
+    
   }
   
   .project-card img {
